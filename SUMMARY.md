@@ -8,5 +8,3 @@
 * [进阶知识](shou-dong-fa.md)
 * [PEP8常用编程规范](pep8chang-yong-bian-cheng-gui-fan.md)
 
-## Python扩展
-
