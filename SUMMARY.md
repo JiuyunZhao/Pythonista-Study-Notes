@@ -14,7 +14,9 @@
   * [序列](python-xue-xi-bi-ji/chapter1/xu-lie.md)
   * [条件和循环控制](python-xue-xi-bi-ji/chapter1/tiao-jian-he-xun-huan-kong-zhi.md)
   * [函数](python-xue-xi-bi-ji/chapter1/han-shu.md)
-  * [迭代器与生成器](python-xue-xi-bi-ji/chapter1/zi-fu-chuan.md)
+  * [迭代器与生成器](python-xue-xi-bi-ji/chapter1/die-dai-qi-yu-sheng-cheng-qi.md)
+  * [装饰器](python-xue-xi-bi-ji/chapter1/zhuang-shi-qi.md)
+  * [类](python-xue-xi-bi-ji/chapter1/lei.md)
 * [进阶知识](python-xue-xi-bi-ji/shou-dong-fa.md)
 * [PEP8常用编程规范](python-xue-xi-bi-ji/pep8chang-yong-bian-cheng-gui-fan.md)
 

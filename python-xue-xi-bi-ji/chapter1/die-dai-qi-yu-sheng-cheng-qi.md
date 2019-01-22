@@ -8,8 +8,6 @@
 * **iter\(\)和next\(\)：**这是用于迭代器的两个内建函数，iter\(\)用于为一个可迭代对象创建一个迭代器，next\(\)则用于访问迭代器的元素。
 * **注：**Python2中迭代器自身的迭代方法是next\(\)，Python3中为\_\_next\_\_\(\)。
 
-
-
 ##### 简单示例：
 
 ```
@@ -29,7 +27,7 @@
         else:
             raise StopIteration
 
-        
+
 >>> it = MyIter()
 >>> next(it)
 >>> for item in it:
@@ -52,19 +50,17 @@ StopIteration
 >>> for item in new_it:
     print(item)
 
-    
+
 c
 >>>
 ```
 
-
+#### 
 
 #### **生成器：**
 
 * **定义：**如果一个函数被调用时返回了一个迭代器，那么这个函数就叫做生成器；如果一个函数中含有yield语法，那么这个函数也是生成器。
 * **yield语法的特点：**当含有yield语法的函数被调用后，执行yield后，就会中断这个函数，继续执行这个函数之后的代码，当下一次这个函数再被调用时，会从这个函数的上次执行的yield之后的代码开始执行。
-
-
 
 ##### 简单示例：
 
@@ -75,7 +71,7 @@ c
         yield 'hello python!' # 含有yield，这个函数即为生成器，每次生成一个字符串“hello python!”
         n -= 1
 
-        
+
 >>> iterator = generator() # 返回一个迭代器
 >>> iterator.__next__()
 'hello python!'
