@@ -19,6 +19,8 @@
 <type 'str'>
 ```
 
+
+
 **输出函数print\(\)**
 
 在Python2.7中可以不用括号（用一个空格间隔），但是在Python3.x中统一为print\(\)，必须有括号。
@@ -34,4 +36,6 @@ print\(self, \*args, sep=' ', end='\n', file=None\)
 a-b-c#
 >>>
 ```
+
+
 
