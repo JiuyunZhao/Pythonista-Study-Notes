@@ -6,5 +6,3 @@
 * **complex：**复数（虚数在数字末尾加字母j表示），比如：3+2j或complex\(3, 2\)。
 * **bool：**布尔值（1代表True，0代表False，True+False的结果为1），另外True和False在Python2中并不是关键字，在Python3中才列入了关键字。
 
-
-

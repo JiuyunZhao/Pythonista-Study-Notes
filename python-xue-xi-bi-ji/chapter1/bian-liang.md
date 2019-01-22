@@ -8,11 +8,9 @@
 * **nonlocal：**Python2中没有这个关键字，Python3中才有，如果想要修改外层非全局作用域中的变量时，需要使用关键字nonlocal声明此变量为局部变量。
 * **Python关键字：**当前版本的Python的关键字，使用keyword模块的kwlist查看即可。
 
-
-
 **简单示例：**
 
-```
+```text
 >>> # global关键字使用
 
 >>> a = 1
@@ -36,6 +34,4 @@
 >>> test_out()
 >>>
 ```
-
-
 
