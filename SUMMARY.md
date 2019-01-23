@@ -1,4 +1,4 @@
-# Table of contents
+# Summary
 
 * [前言](README.md)
 
@@ -17,6 +17,8 @@
   * [迭代器与生成器](python-xue-xi-bi-ji/chapter1/die-dai-qi-yu-sheng-cheng-qi.md)
   * [装饰器](python-xue-xi-bi-ji/chapter1/zhuang-shi-qi.md)
   * [类](python-xue-xi-bi-ji/chapter1/lei.md)
+  * [异常处理](python-xue-xi-bi-ji/chapter1/yi-chang-chu-li.md)
+  * [open函数和with临时运行环境](python-xue-xi-bi-ji/chapter1/wen-jian-cao-zuo.md)
 * [进阶知识](python-xue-xi-bi-ji/shou-dong-fa.md)
 * [PEP8常用编程规范](python-xue-xi-bi-ji/pep8chang-yong-bian-cheng-gui-fan.md)
 
