@@ -1,9 +1,8 @@
 # Summary
 
-* [前言](README.md)
-
 ## Python学习笔记
 
+* [前言](README.md)
 * [基础知识](python-xue-xi-bi-ji/chapter1/README.md)
   * [输入输出](python-xue-xi-bi-ji/chapter1/shu-ru-shu-chu.md)
   * [注释](python-xue-xi-bi-ji/chapter1/zhu-shi.md)
@@ -16,9 +15,21 @@
   * [函数](python-xue-xi-bi-ji/chapter1/han-shu.md)
   * [迭代器与生成器](python-xue-xi-bi-ji/chapter1/die-dai-qi-yu-sheng-cheng-qi.md)
   * [装饰器](python-xue-xi-bi-ji/chapter1/zhuang-shi-qi.md)
-  * [类](python-xue-xi-bi-ji/chapter1/lei.md)
+  * [面向对象（类）](python-xue-xi-bi-ji/chapter1/lei.md)
   * [异常处理](python-xue-xi-bi-ji/chapter1/yi-chang-chu-li.md)
   * [open函数和with临时运行环境](python-xue-xi-bi-ji/chapter1/wen-jian-cao-zuo.md)
-* [进阶知识](python-xue-xi-bi-ji/shou-dong-fa.md)
+* [常用内置库](python-xue-xi-bi-ji/shou-dong-fa.md)
+  * [os模块](python-xue-xi-bi-ji/shou-dong-fa/osmo-kuai.md)
+  * [sys模块](python-xue-xi-bi-ji/shou-dong-fa/sysmo-kuai.md)
+  * [time模块（时间）](python-xue-xi-bi-ji/shou-dong-fa/timemo-kuai-ff08-shi-jian-ff09.md)
+  * [datetime模块（日期）](python-xue-xi-bi-ji/shou-dong-fa/datetimemo-kuai-ff08-ri-qi-ff09.md)
+  * [json模块和pickle模块（JSON）](python-xue-xi-bi-ji/shou-dong-fa/jsonmo-kuai-he-pickle-mo-kuai-ff08-json.md)
+  * [re模块\(正则表达式\)](python-xue-xi-bi-ji/shou-dong-fa/remo-575728-zheng-ze-biao-da-5f0f29.md)
+  * [math模块（数学）](python-xue-xi-bi-ji/shou-dong-fa/mathmo-kuai-ff08-shu-xue-ff09.md)
+  * [random模块（随机数）](python-xue-xi-bi-ji/shou-dong-fa/randommo-kuai-ff08-sui-ji-shu-ff09.md)
+* [常用三方库](chang-yong-san-fang-ku.md)
+  * [xlrd和xlwt（Excel读写）](chang-yong-san-fang-ku/xlrdhe-xlwt-excel-du-xie-ff09.md)
+* [设计模式](she-ji-mo-shi.md)
+  * [单例模式](she-ji-mo-shi/dan-li-mo-shi.md)
 * [PEP8常用编程规范](python-xue-xi-bi-ji/pep8chang-yong-bian-cheng-gui-fan.md)
 
