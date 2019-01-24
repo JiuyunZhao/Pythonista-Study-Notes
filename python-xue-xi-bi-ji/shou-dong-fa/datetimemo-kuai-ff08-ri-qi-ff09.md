@@ -9,9 +9,7 @@ datetime模块通常用来操作日期信息（年月日和时分秒），常用
 * **datetime.timedelta：**timedelta对象初始化时指定日期时间信息，可用它与datetime对象进行加减操作，并返回新的datetime对象，当然timedelta对象之间也可以进行加减操作，返回新的timedelta对象。
 * **timetuple\(\)：**将datetime对象转换成struct\_time对象，并返回。
 
-
-
-##### 日期时间格式化字符串：
+## 日期时间格式化字符串：
 
 | %a | 星期的缩写，如星期三Wed。 |
 | :--- | :--- |
@@ -39,11 +37,9 @@ datetime模块通常用来操作日期信息（年月日和时分秒），常用
 | %Z | Time zone offset indicating a positive or negative time difference from UTC/GMT of the form +HHMM or -HHMM, where H represents decimal hour digits and M represents decimal minute digits \[-23:59, +23:59\]. |
 | %% | 百分号“%”。 |
 
+## 简单示例：
 
-
-##### 简单示例：
-
-```
+```text
 >>> import datetime
 >>> # now()方法，返回当期时间的datetime对象，可通过str得到日期时间信息的字符串
 >>> datetime_now = datetime.datetime.now()
@@ -80,6 +76,4 @@ datetime.datetime(2018, 8, 17, 5, 30, 1, 70000)
 >>> now_datetime.timetuple()
 time.struct_time(tm_year=2018, tm_mon=8, tm_mday=9, tm_hour=2, tm_min=5, tm_sec=50, tm_wday=3, tm_yday=221, tm_isdst=-1)
 ```
-
-
 

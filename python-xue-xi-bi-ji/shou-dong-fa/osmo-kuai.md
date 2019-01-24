@@ -34,19 +34,15 @@
 
 **os.chdir\(path\)：**改变当前工作目录为新的目录path。
 
-**os.system\(command\)：**调用dos命令并运行，例如：os.system\('python D:\\test.py arg1 arg2'\)，即在DOS界面运行Python文件test.py，并传入参数“arg1”和“arg2”。
+**os.system\(command\)：**调用dos命令并运行，例如：os.system\('python D:\test.py arg1 arg2'\)，即在DOS界面运行Python文件test.py，并传入参数“arg1”和“arg2”。
 
 **os.\_exit\(status\)：**以指定状态退出Python解释器，并不做任何处理，即运行完这条语句后就会直接退出了，后面的代码都不会执行了。退出Python解释器还有一个sys.exit\(\)方法，详细见sys模块。
 
+**注：**Windows的路径分隔符为“\”，所以写路径字符串的时候一般都是要写成“\”的，但是在Python中，无论什么平台，只需要写“/”就OK了，避免了不同平台的路径分隔符不同的问题。
 
+## 简单示例：
 
-**注：**Windows的路径分隔符为“\”，所以写路径字符串的时候一般都是要写成“\\”的，但是在Python中，无论什么平台，只需要写“/”就OK了，避免了不同平台的路径分隔符不同的问题。
-
-
-
-##### 简单示例：
-
-```
+```text
 >>> os.path.dirname('D:\\Games')
 'D:\\'
 >>> os.path.basename('D:\\Games\\9yin_632\\蜗牛整包\\0x0804.ini')
@@ -56,6 +52,4 @@
 >>> os.path.abspath('Games')  # 随意写的字符串（相对路径），返回的路径字符串加上了当前的工作路径（绝对路径）
 'C:\\Python27\\Games'
 ```
-
-
 

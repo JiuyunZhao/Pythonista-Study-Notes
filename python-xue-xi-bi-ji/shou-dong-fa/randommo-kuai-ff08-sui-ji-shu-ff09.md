@@ -9,5 +9,3 @@ random模块用于生成各种随机数，常用的方法有：
 * **random.choice\(seq\)：**从传入的非空序列seq中随机返回一个元素。
 * **random.sample\(population, k\)：**随机返回序列或集合中的k个元素的列表。
 
-
-
