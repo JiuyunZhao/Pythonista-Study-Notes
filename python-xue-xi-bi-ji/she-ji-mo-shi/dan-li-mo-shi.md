@@ -6,7 +6,7 @@
 
 **注：**关于元类和单例模式，本文只是贴了两个简单的示例代码和自己的一些心得，想要更加深入的学习，这里有一篇博客讲得很详细[https://www.cnblogs.com/tkqasn/p/6524879.html](https://www.cnblogs.com/tkqasn/p/6524879.html)
 
-## **元类实现单例模式（Python3.6）**
+##### **元类实现单例模式（Python3.6）**
 
 ```text
 class Singleton(type):
@@ -67,7 +67,7 @@ True
 * **原理：**由于每次实例化MySingleton时都会先调用metaclass中的\_\_call\_\_方法，所以只有第一次实例化时才会执行MySingleton的\_\_new\_\_和\_\_init\_\_，后面的实例化都只会返回第一次实例化好的实例，所以导致的结果就是无论进行多少次实例化，都给你返回同一个实例，当然就只有单例了（所以“输出结果”中就没有打印“hi”了） 。
 * **cls和self：**Singleton的编写，在eclipse中提示需要写成self，在PyCharm中提示需要写成cls，因为参数self是约定代表实例本身，但在这里type的实例就是类，所以推荐写成cls。
 
-## **\_\_new\_\_实现单例模式（Python3.6）**
+##### **\_\_new\_\_实现单例模式（Python3.6）**
 
 ```text
 class MySingleton:
@@ -99,4 +99,6 @@ True
 * **原理：**通过给类定义一个类变量，指向本类的一个实例，每次实例化调用\_\_new\_\_的时候都返回这个类变量，可以看到数据结果打印的是True，所以自然就是单例了。
 * **缺点：**每次实例化虽然都是同一个实例，但是每次实例化都会调用一次\_\_init\_\_方法，导致这个实例会随着每次初始化而改变，所以不推荐这种方式来实现单例，因为\_\_new\_\_方法一般是用来改变类结构的。
 * **hasattr：**类中的私有变量，即加了双下划线的变量，在\_\_dict\_\_中会加上一个“\_classname”前缀，所以如果这里使用\_\_instance的话，hasattr\(cls, '\_\_instance'\)会一直返回False，因为这里已经不是\_\_instance了，而是\_MySingleton\_\_instance。
+
+
 

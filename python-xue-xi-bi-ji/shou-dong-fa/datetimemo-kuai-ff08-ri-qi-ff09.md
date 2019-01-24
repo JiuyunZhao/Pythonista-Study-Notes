@@ -9,7 +9,7 @@ datetime模块通常用来操作日期信息（年月日和时分秒），常用
 * **datetime.timedelta：**timedelta对象初始化时指定日期时间信息，可用它与datetime对象进行加减操作，并返回新的datetime对象，当然timedelta对象之间也可以进行加减操作，返回新的timedelta对象。
 * **timetuple\(\)：**将datetime对象转换成struct\_time对象，并返回。
 
-## 日期时间格式化字符串：
+##### 日期时间格式化字符串：
 
 | %a | 星期的缩写，如星期三Wed。 |
 | :--- | :--- |
@@ -76,4 +76,6 @@ datetime.datetime(2018, 8, 17, 5, 30, 1, 70000)
 >>> now_datetime.timetuple()
 time.struct_time(tm_year=2018, tm_mon=8, tm_mday=9, tm_hour=2, tm_min=5, tm_sec=50, tm_wday=3, tm_yday=221, tm_isdst=-1)
 ```
+
+
 

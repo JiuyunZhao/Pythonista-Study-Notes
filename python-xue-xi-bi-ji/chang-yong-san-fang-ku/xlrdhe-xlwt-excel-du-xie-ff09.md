@@ -8,7 +8,7 @@ Python的三方库xlrd用于对excel文件进行读取，可以是“.xls”或�
 
 **API文档：**[https://xlrd.readthedocs.io/en/latest/api.html](https://xlrd.readthedocs.io/en/latest/api.html)
 
-### 常用方法：
+##### 常用方法：
 
 * **work\_book = xlrd.open\_workbook\(filename\)：**打开指定路径的excel文件，返回excel处理对象，但无法打开不存在的文件。
 * **work\_book.nsheets：**返回excel中的sheet个数。
@@ -58,27 +58,26 @@ Python的三方库xlwt用于新建一个excel文件，可以是“.xls”或“.
 * **sheet.col\_width\(col\)：**获取列宽。
 * **xlwt.Formula\(s\)：**s为excel中的公式字符串，可以将这个Formula对象作为write等方法的值传入进去。
 
-**xlwt.Formula简单示例：**
+##### **xlwt.Formula简单示例：**
 
 ```text
 # 设置Excel内的超链接，这部分整体作为value传入write等写入方法中，
 # 其中的第一个双引号为Excel中的公式表示，不能用单引号或三引号；
-# value为写入单元格的值，sheet\_name为链接的目的地址，col（1,2,3...）和row（A,B,C...）表示连接到sheet\_name的单元格位置。
-xlwt.Formula\('HYPERLINK\("\#%s!%s%s";"%s"\)' % \(sheet\_name, col, row, value\)\)
+# value为写入单元格的值，sheet_name为链接的目的地址，
+# col（1,2,3...）和row（A,B,C...）表示连接到sheet_name的单元格位置。
+xlwt.Formula('HYPERLINK("#%s!%s%s";"%s")' % (sheet_name, col, row, value))
 
 # 设置Excel外的链接。
-xlwt.Formula\('HYPERLINK\("https://www.baidu.com";"百度"\)'\)
+xlwt.Formula('HYPERLINK("https://www.baidu.com";"百度")')
 
-# 设置某个单元格的值为“A1\*B1”的值。
-xlwt.Formula\('A1\*B1'\)
+# 设置某个单元格的值为“A1*B1”的值。
+xlwt.Formula('A1*B1')
 
-# 设置某个单元格的值为“SUM\(A1, B1\)”的值。
-xlwt.Formula\('SUM\(A1, B1\)'\)
+# 设置某个单元格的值为“SUM(A1, B1)”的值。
+xlwt.Formula('SUM(A1, B1)')
 ```
 
-
-
-### 设置单元格字体：
+##### 设置单元格字体：
 
 ```text
 cell_font = xlwt.Font() # 字体对象
@@ -91,7 +90,7 @@ cell_style.font = cell_font # 将字体样式赋给格式对象中的字体
 sheet.write(1, 0, value, cell_style) # 在单元格写入等方法中将格式参数传进去
 ```
 
-### 设置单元格边框：
+##### 设置单元格边框：
 
 ```text
 cell_borders = xlwt.Borders() # 边框对象
@@ -104,7 +103,7 @@ cell_style.borders = cell_borders # 将边框样式赋给格式对象
 sheet.write(0, 0, value, cell_style)
 ```
 
-### 设置单元格背景色：
+##### 设置单元格背景色：
 
 ```text
 cell_pattern = xlwt.Pattern() 
@@ -114,4 +113,6 @@ cell_style = xlwt.XFStyle()
 cell_style.pattern = cell_pattern 
 sheet.write(0, 0, value, cell_style)
 ```
+
+
 
