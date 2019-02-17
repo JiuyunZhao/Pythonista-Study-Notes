@@ -1,4 +1,4 @@
-# Table of contents
+# Summary
 
 * [Introduction](README.md)
 
@@ -31,6 +31,7 @@
   * [random模块（随机数）](python-xue-xi-bi-ji/shou-dong-fa/randommo-kuai-ff08-sui-ji-shu-ff09.md)
 * [常用三方库](python-xue-xi-bi-ji/chang-yong-san-fang-ku/README.md)
   * [xlrd和xlwt（Excel读写）](python-xue-xi-bi-ji/chang-yong-san-fang-ku/xlrdhe-xlwt-excel-du-xie-ff09.md)
+  * [wxPython（GUI图形用户界面）](python-xue-xi-bi-ji/chang-yong-san-fang-ku/wxpythonguitu-xing-yong-hu-jie-mian-ff09.md)
 * [设计模式](python-xue-xi-bi-ji/she-ji-mo-shi/README.md)
   * [单例模式](python-xue-xi-bi-ji/she-ji-mo-shi/dan-li-mo-shi.md)
 * [PEP8常用编程规范](python-xue-xi-bi-ji/pep8chang-yong-bian-cheng-gui-fan.md)
