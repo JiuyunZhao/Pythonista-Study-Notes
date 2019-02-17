@@ -2,11 +2,11 @@
 
 wxPython是一套基于Python的第三方GUI插件，可用Python制作丰富的图形化界面程序。
 
-**安装：**pip install wxPython 或者 网站下载安装https://pypi.org/project/wxPython/\#files
+**安装：**pip install wxPython 或者 网站下载安装[https://pypi.org/project/wxPython/\#files](https://pypi.org/project/wxPython/#files)
 
+##### 
 
-
-##### **wxPython demo：**
+##### wxPython demo：
 
 **运行demo：**直接cd到包路径，然后使用“python demo.py”或者“pythonw demo.pyw”。
 
@@ -20,17 +20,13 @@ wxPython中大部分控件的使用效果都可以在demo程序中看到，所�
 
 wxPython中控件的初始化方法、事件和各种方法在接口文档中都有详细的说明，或者你不知道某个控件有哪些方法时，也不妨去看看接口文档。
 
-**demo和docs下载：**https://extras.wxpython.org/wxPython4/extras/
+**demo和docs下载：**[https://extras.wxpython.org/wxPython4/extras/](https://extras.wxpython.org/wxPython4/extras/)
 
 ![](/assets/demo-docs.png)
-
-
 
 ##### 电子书推荐：
 
 demo和docs中的说明虽然已经很丰富了，但是某些控件的demo代码并不是太直观，docs中的说明也是全英文的，所以在实际开发的时候还是会有很多不明白的问题，这些问题除了网上搜答案之外，推荐一本电子书**《wxPython实战\(中文版）高清.pdf》**，这本电子书虽然在wxPython版本上有差异，但是对于控件的使用说明可以说非常详细了，同时还有独立的demo代码，对学习和使用wxPython非常有帮助。
-
-
 
 ## wxPython使用
 
@@ -90,8 +86,6 @@ if __name__ == '__main__':
     app.MainLoop()
 ```
 
-
-
 ##### 进度条对话框
 
 **弹窗式进度条：**wx.ProgressDialog
@@ -99,8 +93,6 @@ if __name__ == '__main__':
 ![](/assets/progressdialog.png)
 
 wx.ProgressDialog为进度条显示弹窗，它的唯一的方法Update\(value,newmsg=””\)，value参数是进度条的新的内部的值，调用update将导致进度条根据新的计数值与最大计算值的比例重绘。如果使用可选的参数newmsg，那么进度条上的文本消息将变为该字符串，这让你可以给用户一个关于当前进度的文本描述。Update方法返回两个参数“continue”和“skip”，分别默认返回“True”和“False”，在Update时，若用户点击过“Cancel”按钮（如果有）或者关闭了对话框，“continue”就返回的是“False”（可用于中断进度条），而“skip”只有点击了“Cancel”按钮后才会返回“True”。
-
-
 
 ##### GUI程序布局
 
@@ -146,8 +138,6 @@ wx.GridSizer为简单网格布局控件，初始化时需要指定行数和列�
 如果格子中的控件的大小不一致时，则会以所有控件中最大的“长”和“宽”作为每个格子的尺寸大小。
 
 使用Add方法在网格中添加控件时，只能按顺序添加控件。
-
-
 
 **更加灵活的网格布局控件：**wx.FlexGridSizer
 
@@ -195,8 +185,6 @@ wx.FlexGridSizer布局控件，相比于wx.GridSizer，更加灵活的地方在�
 当窗口大小发生变化时，默认整个wx.FlexGridSizer是固定不变的，除非使用wx.FlexGridSizer的方法AddGrowableRow（AddGrowableCol）指定某行（列）是可以跟着窗口大小的扩展而扩展。
 
 使用Add方法在网格中添加控件时，只能按顺序添加控件。
-
-
 
 **进阶的网格布局控件：**wx.GridBagSizer
 
@@ -248,8 +236,6 @@ wx.GridBagSizer布局控件，相比于wx.FlexGridSizer和wx.GridSizer，多了�
 
 此控件在使用Add方法时，必须指明添加的位置，即pos参数。
 
-
-
 **横向（纵向）布局控件：**wx.BoxSizer
 
 ![](/assets/boxsizer_h.png)
@@ -297,9 +283,7 @@ wx.BoxSizer布局控件只能横向或者二纵向添加控件，默认是横向
 
 在使用Add方法添加控件时，如果第二个参数proportion指定为0（默认），则“格子”在窗口大小变化时会保持不变，如果需要格子跟着扩展，一般可以指定为1。
 
-
-
-带有标签和边框线的横向（纵向布局控件）：wx.StaticBoxSizer
+**带有标签和边框线的横向（纵向布局控件）：**wx.StaticBoxSizer
 
 ![](/assets/staticboxsizer_h.png)
 
@@ -345,6 +329,4 @@ if __name__ == '__main__':
 ```
 
 wx.StaticBoxSizer布局控件其实就是相当于在wx.BoxSizer外面套了一个wx.StaticBox，用法与wx.BoxSizer是相同的。
-
-
 
