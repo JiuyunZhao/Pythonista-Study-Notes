@@ -308,8 +308,6 @@ plt.annotate(r'2.5=2+0.5',  # 注释文本
 plt.show()
 ```
 
-
-
 #### 绘制子图
 
 有时候我们可能需要在一张图（figure）上同时绘制几个或几张图形（subplot），以便更好的观察和分析。
@@ -349,8 +347,6 @@ plt.plot(x2, y2, label='first line')
 plt.show()
 ```
 
-
-
 ##### 同一个figure中绘制多个子图，简单示例：
 
 ![](/assets/subplots.png)
@@ -361,7 +357,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 # 创建一个figure，且创建一个2行1列的子图网格，返回figure对象和子图数组
-# 如果网格只有一行或者一列，那就返回一个一维子图数组，如果有多行多列，就返回对应的二维子图数组
+# 网格默认为一行一列，此时返回子图本身，如果网格只有一行或者一列，那就返回一个一维子图数组，如果有多行多列，就返回对应的二维子图数组
 # subplots中传入的参数可以是figure的参数
 fig, axes = plt.subplots(2, 1, num='My Figure Demo')
 
@@ -386,8 +382,6 @@ axes[1].legend()
 # 绘制并显示
 plt.show()
 ```
-
-
 
 ##### 跨行或跨列绘制子图，简单示例：
 
