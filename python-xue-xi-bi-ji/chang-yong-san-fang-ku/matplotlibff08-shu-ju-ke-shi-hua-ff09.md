@@ -175,6 +175,43 @@ plt.yticks([1, 2, 3, 5],
 plt.show()
 ```
 
+
+
+#### 添加第二个Y轴
+
+有时候在绘制多个图形时，不同的图形使用的Y轴刻度不同，或者使用两种不同的刻度显示会更加直观，这时候就可以左边的Y轴使用一种刻度，右边也添加一条Y轴，用于显示另一种刻度，但注意的是它们共享X轴的刻度。
+
+##### 简单示例：
+
+![](/assets/twinx.png)
+
+```py
+# -*- coding:utf-8 -*-
+import numpy as np
+from matplotlib import pyplot as plt
+
+# 第一条线：一条普通的折线图
+x1 = np.array([1, 2, 3])
+y1 = np.array([1, 2, 3])
+# linewidth设置线宽，单位为像素，linestyle默认为实线，“--”表示虚线
+plt.plot(x1, y1, color='red', linewidth=3, linestyle='--')
+
+# 创建另一个坐标轴，此坐标轴与之前的坐标轴共用X轴，并将Y轴置于右边
+plt.twinx()
+
+# 第二条线：一条sin函数图
+# linspace返回0到pi之间等间隔的200值组成的数组
+x2 = np.linspace(0, np.pi, 200)
+# 返回x2中每个元素的sin值组成的数组
+y2 = np.sin(x2)
+plt.plot(x2, y2)
+
+# 绘制并展示图形
+plt.show()
+```
+
+
+
 #### 移动坐标轴
 
 横纵坐标轴的交点位置默认在左下角，并且起点都是在各自的下限，但是有些时候我们希望交点位置在横纵坐标的0点位置，也就是原点，这时候就可以移动坐标轴到我们想要的位置了。
