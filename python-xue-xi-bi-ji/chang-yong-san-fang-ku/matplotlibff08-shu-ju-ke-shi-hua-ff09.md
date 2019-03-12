@@ -175,8 +175,6 @@ plt.yticks([1, 2, 3, 5],
 plt.show()
 ```
 
-
-
 #### 添加第二个Y轴
 
 有时候在绘制多个图形时，不同的图形使用的Y轴刻度不同，或者使用两种不同的刻度显示会更加直观，这时候就可以左边的Y轴使用一种刻度，右边也添加一条Y轴，用于显示另一种刻度，但注意的是它们共享X轴的刻度。
@@ -209,8 +207,6 @@ plt.plot(x2, y2)
 # 绘制并展示图形
 plt.show()
 ```
-
-
 
 #### 移动坐标轴
 
@@ -455,6 +451,43 @@ axe2.plot(x2, y2, label='second line')
 
 # 显示图例
 axe2.legend()
+
+# 绘制并显示
+plt.show()
+```
+
+
+
+#### 显示中文
+
+Matplotlib默认是不只支持中文的，但是可以使用自带的中文字体。
+
+##### 简单示例：
+
+![](/assets/display_cn.png)
+
+```py
+# -*- coding:utf-8 -*-
+import numpy as np
+from matplotlib import pyplot as plt
+
+# 打印自带的字体，可以从里面选一种中文字体
+# from matplotlib import font_manager
+# for f in font_manager.fontManager.ttflist:
+#     print(f.name)
+
+# 设置字体为SimHei（黑体）
+plt.rcParams['font.family'] = ['SimHei']
+
+
+# 一条普通的折线图
+x1 = np.array([1, 2, 3])
+y1 = np.array([1, 2, 3])
+# linewidth设置线宽，单位为像素，linestyle默认为实线，“--”表示虚线
+plt.plot(x1, y1, label='一条普通的折线图', color='red', linewidth=3, linestyle='--')
+
+# 显示图例
+plt.legend(loc='upper left')
 
 # 绘制并显示
 plt.show()
