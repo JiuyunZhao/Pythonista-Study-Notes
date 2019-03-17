@@ -4,7 +4,11 @@ wxPython是一套基于Python的第三方GUI插件，可用Python制作丰富的
 
 **安装：**pip install wxPython 或者 网站下载安装[https://pypi.org/project/wxPython/\#files](https://pypi.org/project/wxPython/#files)
 
-##### 
+
+
+**demo和docs下载：**[https://extras.wxpython.org/wxPython4/extras/](https://extras.wxpython.org/wxPython4/extras/)
+
+![](/assets/docs_down.png)
 
 ##### wxPython demo：
 
@@ -16,13 +20,11 @@ wxPython中大部分控件的使用效果都可以在demo程序中看到，所�
 
 ##### wxPython docs：
 
-运行docs：直接使用浏览区打开文件夹中的index.html，然后就可以查找想要的文档信息了。
+运行docs：直接使用浏览器打开文件夹中的index.html，然后就可以查找想要的文档信息了。
 
 wxPython中控件的初始化方法、事件和各种方法在接口文档中都有详细的说明，或者你不知道某个控件有哪些方法时，也不妨去看看接口文档。
 
-**demo和docs下载：**[https://extras.wxpython.org/wxPython4/extras/](https://extras.wxpython.org/wxPython4/extras/)
 
-![](/assets/demo-docs.png)
 
 ##### 电子书推荐：
 
@@ -329,4 +331,46 @@ if __name__ == '__main__':
 ```
 
 wx.StaticBoxSizer布局控件其实就是相当于在wx.BoxSizer外面套了一个wx.StaticBox，用法与wx.BoxSizer是相同的。
+
+
+
+#### 在wxPython中使用Matplotlib进行绘图
+
+Matplotlib是一个用于绘图的Python三方库，可以绘制折线图、函数图、柱状图、饼图等多种图形。但是在wxPython中不能直接使用Matplotlib来进行绘图，需要使用Matplotlib提供给wxPython的接口matplotlib.backends.backend\_wxagg来进行嵌入和绘制。
+
+关于Matplotlib，可以参考我另一篇笔记：https://www.cnblogs.com/guyuyun/p/10486587.html
+
+##### 简单示例：
+
+![](/assets/wx_matplotli.png)
+
+```py
+# -*- coding:utf-8 -*-
+import wx
+from matplotlib import pyplot
+from matplotlib.backends.backend_wxagg import FigureCanvasWxAgg
+
+
+class TestMpltFrame(wx.Frame):
+    def __init__(self):
+        super().__init__(None, size=(650, 500), title='Test Matplotlib Frame')
+        self.panel = wx.Panel(self)
+        # subplots默认返回一个Figure和一行一列的子图对象
+        self.fig, self.axe = pyplot.subplots()
+        # 使用FigureCanvasWxAgg来创建Figure的背景画布
+        self.canvas = FigureCanvasWxAgg(self, -1, self.fig)
+        # 绘制一条普通的折线图
+        self.x_data = [1, 2, 4]
+        self.y_data = [2, 5, 1]
+        self.axe.plot(self.x_data, self.y_data)
+
+
+if __name__ == '__main__':
+    app = wx.App()
+    test_mplt_frame = TestMpltFrame()
+    test_mplt_frame.Show()
+    app.MainLoop()
+```
+
+
 
