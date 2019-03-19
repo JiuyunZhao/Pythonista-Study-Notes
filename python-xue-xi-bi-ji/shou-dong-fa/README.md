@@ -10,4 +10,7 @@
 * re模块\(正则表达式\)
 * math模块（数学）
 * random模块（随机数）
+* sqlite3（sqlite数据库操作）
+
+
 
