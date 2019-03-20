@@ -4,15 +4,9 @@
 
 sqlite3是Python对于sqlite数据库的支持，模块名称之所以是sqlite3而不是sqlite，是因为sqlite的版本中最流行的就是3.x的版本。
 
+**sqlite数据库教程：**[http://www.runoob.com/sqlite/sqlite-intro.html](http://www.runoob.com/sqlite/sqlite-intro.html)
 
-
-**sqlite数据库教程：**http://www.runoob.com/sqlite/sqlite-intro.html
-
-**sqlite3 API介绍：**http://www.runoob.com/sqlite/sqlite-python.html
-
-**sqlite GUI软件SQLiteSpy：**https://www.yunqa.de/delphi/products/sqlitespy/index，数据库的可视化管理工具有很多，你也可以选择其他的软件，但是SQLiteSpy这个软件免费而且非常小，对于平常的sqlite数据库操作其实已经可以满足了。
-
-
+**sqlite GUI软件SQLiteSpy：**[https://www.yunqa.de/delphi/products/sqlitespy/index，数据库的可视化管理工具有很多，你也可以选择其他的软件，但是SQLiteSpy这个软件免费而且非常小，对于平常的sqlite数据库操作其实已经可以满足了。](https://www.yunqa.de/delphi/products/sqlitespy/index，数据库的可视化管理工具有很多，你也可以选择其他的软件，但是SQLiteSpy这个软件免费而且非常小，对于平常的sqlite数据库操作其实已经可以满足了。)
 
 #### 常用API（方括号中为可选参数）
 
@@ -33,8 +27,6 @@ sqlite3是Python对于sqlite数据库的支持，模块名称之所以是sqlite3
 **csr.fetchmany\(size\)：**获取查询结果集中的指定大小的下一组数据，默认返回一行数据（不同与fetchone，返回的是列表，而列表中只有一个元组），如果没有数据则返回空列表。
 
 **csr.fetchall\(\)：**返回查询结果集中的全部数据。
-
-
 
 ##### 简单示例
 
@@ -87,8 +79,6 @@ conn.commit()
 conn.close()
 ```
 
-
-
 #### 常用SQL
 
 sqlite的更多知识可以参考笔记开始的sqlite教程。
@@ -100,6 +90,4 @@ SELECT name FROM sqlite\_master WHERE type='table';
 ##### 查询表中的字段信息：
 
 PRAGMA TABLE\_INFO\(\[table\_name\]\);
-
-
 
