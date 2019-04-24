@@ -11,6 +11,7 @@
 * math模块（数学）
 * random模块（随机数）
 * sqlite3（sqlite数据库操作）
+* logging（日志处理）
 
 
 

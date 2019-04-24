@@ -30,6 +30,7 @@
   * [math模块（数学）](python-xue-xi-bi-ji/shou-dong-fa/mathmo-kuai-ff08-shu-xue-ff09.md)
   * [random模块（随机数）](python-xue-xi-bi-ji/shou-dong-fa/randommo-kuai-ff08-sui-ji-shu-ff09.md)
   * [sqlite3（sqlite数据库操作）](python-xue-xi-bi-ji/shou-dong-fa/sqlite3sqliteshu-ju-ku-cao-zuo-ff09.md)
+  * [logging（日志处理）](python-xue-xi-bi-ji/shou-dong-fa/loggingff08-ri-zhi-chu-li-ff09.md)
 * [常用三方库](python-xue-xi-bi-ji/chang-yong-san-fang-ku/README.md)
   * [xlrd和xlwt（Excel读写）](python-xue-xi-bi-ji/chang-yong-san-fang-ku/xlrdhe-xlwt-excel-du-xie-ff09.md)
   * [wxPython（GUI图形用户界面）](python-xue-xi-bi-ji/chang-yong-san-fang-ku/wxpythonguitu-xing-yong-hu-jie-mian-ff09.md)
