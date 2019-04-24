@@ -91,3 +91,9 @@ SELECT name FROM sqlite\_master WHERE type='table';
 
 PRAGMA TABLE\_INFO\(\[table\_name\]\);
 
+##### 使用分享：
+
+1. SQL中的表名或者字段名带有特殊符号时应该使用嵌套引号括起来，这些特殊符号可能是语法的一部分，应该使用嵌套引号表名它是一个整体，特别是使用格式化字符串时别忘了使用引号嵌套。如包含点号：'SELECT "aa.bb" FROM xxx;'或者'SELECT xxx FROM "%s";' % 'ccc.ddd.eee'
+
+
+
