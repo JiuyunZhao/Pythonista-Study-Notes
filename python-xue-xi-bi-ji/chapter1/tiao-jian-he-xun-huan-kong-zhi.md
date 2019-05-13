@@ -14,7 +14,7 @@ for用于遍历一个可迭代对象，使用continue可以结束本层循环的
 
 ## for和while的else
 
-当for或while正常执行完后接着执行else中的内容，当forwhile循环中使用break终止跳出循环后就不会执行else中的内容了。
+当for或while正常执行完后接着执行else中的内容，当for或while循环中使用break终止跳出循环后就不会执行else中的内容了。
 
 ## 简单语句组
 
@@ -68,4 +68,6 @@ ok
 1
 >>>
 ```
+
+
 
