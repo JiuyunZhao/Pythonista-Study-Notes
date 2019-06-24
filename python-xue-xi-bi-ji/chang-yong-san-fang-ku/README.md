@@ -5,6 +5,7 @@
 * xlrd和xlwt（Excel读写）
 * wxPython（GUI图形用户界面）
 * Matplotlib（数据可视化）
+* PyInstaller（exe程序打包）
 
 
 
