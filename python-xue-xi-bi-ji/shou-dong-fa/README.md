@@ -13,6 +13,7 @@
 * sqlite3（sqlite数据库操作）
 * logging（日志处理）
 * configparser（INI格式配置文件解析）
+* threading（多线程操作）
 
 
 
