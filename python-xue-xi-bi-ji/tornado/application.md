@@ -7,7 +7,7 @@
     * **template\_path：**设置模板文件（HTML文件）；
     * **static\_path：**设置静态文件（如图像、CSS文件、JavaScript文件等）的路径；
     * **debug：**设置成True时开启调试模式，tornado会调用tornado.autoreload模块，当Python文件被修改时，会尝试重新启动服务器并在模板改变时刷新浏览器（在开发时使用，不要在生产中使用）；
-    * **ui\_modules：**设置自定义UI模块，传入一个模块名（变量名）为键、类为值的字典，这个类为tornado.web.UIModule的子类，在HTML中使用{% module module\_name %}时会自动包含module\_name类中render方法返回的字符串（一般为包含HTML标签内容的字符串），如果是HTML文件，返回的就是HTML模板中内容的字符串。
+    * **ui\_modules：**设置自定义UI模块，传入一个模块名（变量名）为键、类为值的字典，这个类为tornado.web.UIModule的子类，在HTML中使用`{% module module_name %}`时会自动包含module\_name类中render方法返回的字符串（一般为包含HTML标签内容的字符串），如果是HTML文件，返回的就是HTML模板中内容的字符串。
 
 4. **数据库：**可以在Application的子类中连接数据库“self.db = database”，然后在每个RequestHandler中都可以使用连接的数据库“db\_name = self.application.db.database”。
 
