@@ -47,6 +47,8 @@
   * [UIModule](python-xue-xi-bi-ji/tornado/uimodule.md)
   * [Tornado异步](python-xue-xi-bi-ji/tornado/tornadoyi-bu.md)
   * [Tronado的web应用安全（cookie和CSRF/XSRF）](python-xue-xi-bi-ji/tornado/tronadode-web-ying-yong-an-quan-ff08-cookie-he-csrf-xsrf.md)
+* [Flask](python-xue-xi-bi-ji/flask.md)
+  * [Jinja2模板](python-xue-xi-bi-ji/flask/jinja2mo-ban.md)
 * [PyCharm使用](python-xue-xi-bi-ji/pycharmshi-yong.md)
 * [PEP8常用编程规范](python-xue-xi-bi-ji/pep8chang-yong-bian-cheng-gui-fan.md)
 
