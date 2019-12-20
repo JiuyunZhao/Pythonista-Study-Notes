@@ -1,4 +1,4 @@
-# 视图函数
+# 视图函数返回值
 
 **返回HTML模板：**使用“from flask import render\_template”，在函数中传入相对于文件夹“templates”HTML模板路径名称字符串即可（默认模板路径），flask会自动到项目根目录的“templates”文件夹（创建flask项目时，PyCharm会自动创建两个空文件夹，其中一个就是“templates”）下寻找对应的HTML文件。
 
