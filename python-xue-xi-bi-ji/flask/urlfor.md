@@ -4,7 +4,7 @@
 
 ![](/assets/flask-10.png)
 
-**链接URL和静态文件URL：**两者都可以使用“url\_for”来得到对应的url。链接使用如“&lt;a href="{{ url\_for\('func\_name', \*args\) }}"&gt;xxx&lt;/a&gt;”，此时传入的是视图函数名称及其参数；静态文件则使用如“&lt;link rel="stylesheet" href="{{ url\_for\('static', filename='css/index.css'\) }}" &gt;”，其中“static”是静态文件存放的总文件夹，“filename”的值则是静态文件的具体路径。如图：
+**链接URL和静态文件URL：**两者都可以使用“url_for”来得到对应的url。链接使用如`<a href="{{ url_for('func_name', *args) }}">xxx</a>`，此时传入的是视图函数名称及其参数；静态文件则使用如`<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}" >`，其中“static”是静态文件存放的总文件夹，“filename”的值则是静态文件的具体路径。如图：：
 
 ![](/assets/flask-11.png)
 
