@@ -4,7 +4,7 @@
 
 ## Python学习笔记
 
-* [前言](python-xue-xi-bi-ji/readme.md)
+* [概述](python-xue-xi-bi-ji/readme.md)
 * [基础知识](python-xue-xi-bi-ji/chapter1/README.md)
   * [输入输出](python-xue-xi-bi-ji/chapter1/shu-ru-shu-chu.md)
   * [注释](python-xue-xi-bi-ji/chapter1/zhu-shi.md)
