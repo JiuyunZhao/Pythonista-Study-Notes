@@ -28,6 +28,46 @@ app = tornado.web.Application(
 　　　　　　**settings 
 )
 ```
+```py
+class Application(tornado.web.Application):
+    def __init__(self):
+        handlers = [
+            (r'/', MainHandler),
+            (r'/demo/([0-9Xx\-]+)', DemoHandler),
+        ]
 
+        settings = dict(
+            template_path=os.path.join(os.path.dirname(__file__), 'templates'),
+            static_path=os.path.join(os.path.dirname(__file__), 'static'),
+            ui_modules={'Mymodule': Mymodule},
+            debug=True,
+        )
+
+        # 这里使用的数据库是MongoDB，Python有对应的三方库pymongo作为驱动来连接MongoDB数据库
+        conn = pymongo.MongoClient()
+        self.db = conn['demo_db']
+        tornado.web.Application.__init__(self, handlers, **settings)
+
+class DemoHandler(tornado.web.RequestHandler):
+    def get(self):
+        demo_db = self.application.db.demo_db  # 直接使用连接的数据库
+        sets = demo_db.find()
+        self.render(
+            'demo.html',
+            sets=sets,
+        )
+
+class Mymodule(tornado.web.UIModule):
+    def render(self):
+        return self.render_string('modules/mod.html',)
+
+    # 定义css文件路径
+    def css_files(self):
+        return '/static/css/style.css'
+
+    # 定义js文件路径
+    def javascript_files(self):
+        return '/static/js/jquery-3.2.1.js'
+```
 
 
