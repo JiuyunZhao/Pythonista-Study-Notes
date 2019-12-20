@@ -42,11 +42,10 @@
   * [单例模式](python-xue-xi-bi-ji/she-ji-mo-shi/dan-li-mo-shi.md)
 * [Tornado](python-xue-xi-bi-ji/tornado.md)
   * [helloworld](python-xue-xi-bi-ji/tornado/helloworld.md)
-  * [Application操作](python-xue-xi-bi-ji/tornado/applicationcao-zuo.md)
-  * [RequestHandler操作](python-xue-xi-bi-ji/tornado/requesthandlercao-zuo.md)
   * [UIModule](python-xue-xi-bi-ji/tornado/uimodule.md)
   * [Tornado异步](python-xue-xi-bi-ji/tornado/tornadoyi-bu.md)
   * [Tronado的web应用安全（cookie和CSRF/XSRF）](python-xue-xi-bi-ji/tornado/tronadode-web-ying-yong-an-quan-ff08-cookie-he-csrf-xsrf.md)
+  * [RequestHandler](python-xue-xi-bi-ji/tornado/requesthandler.md)
 * [PyCharm使用](python-xue-xi-bi-ji/pycharmshi-yong.md)
 * [PEP8常用编程规范](python-xue-xi-bi-ji/pep8chang-yong-bian-cheng-gui-fan.md)
 
