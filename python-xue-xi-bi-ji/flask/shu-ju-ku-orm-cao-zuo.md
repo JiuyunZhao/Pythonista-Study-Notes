@@ -1,4 +1,4 @@
-# 数据库ORM操作
+# 数据库ORM
 
 Python中使用sqlalchemy插件可以实现ORM（Object Relationship Mapping，模型关系映射）框架，而Flask中的flask-sqlalchemy其实就是在sqlalchemy外进行了一层封装，使得在flask中使用起来更加方便，当然sqlalchemy的原有的方法也都可以使用。也就是说sqlalchemy在普通的Python程序中也可以使用，而flask-sqlalchemy是为flask“定制”的。
 
@@ -27,7 +27,8 @@ datadir=D:\MySQL Server 8.0\data
 * **设置密码：**重开DOS窗口（保证是管理者权限），执行命令“mysqladmin -u root -p password”，回车，显示“Enter password”，不用输入任何东西直接回车（未设置密码时默认没有密码），显示“New password”，输入自己的密码即可，回车，显示“Confirm new password”，再次输入密码即可，回车，设置密码成功。
 * **登录：**输入命令“mysql -u root -p”，回车，然后输入设置的密码即可。
 
-**安装和使用过程中遇到的问题和解决方案：**
+**安装和使用过程中遇到的问题和解决方案：  
+**
 
 * 使用命令“mysql -u root -p”输入密码后提示“access denied for user root @localhost\(using password:YES\)”，进不去数据库：删除全部文件夹重新安装“MySQL安装（解压版）”，重新设置一遍密码就OK了（关键是网上找了许多办法也不管用，只能这招了）。
 * 运行Flask连接数据库时提示“Client does not support authentication protocol requested by server; consider upgrading MySQL client”：进入数据库后依次执行命名“USE mysql;”、“ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql\_native\_password BY '123456';”和“FLUSH PRIVILEGES;”，其中除了“'123456'”是个人设置的密码外，其他的字母和字符都copy就行了（第二条命令执行失败的话，重新进入数据库或者重新安装数据库再试一下吧，我第一次也没成功，后来重设密码后又成功了）
@@ -36,7 +37,7 @@ datadir=D:\MySQL Server 8.0\data
 
 **pymysql安装：**Python3连接数据库的驱动插件为pymysql，直接用pip3 install pymysql即可。
 
-**mysql-python安装：**Python2连接MySQL数据库的驱动为MySQL-python，也可使用pip install MySQL-python，这里如果安装失败，可直接下载安装包进行安装：https://pypi.org/project/MySQL-python/\#files。
+**mysql-python安装：**Python2连接MySQL数据库的驱动为MySQL-python，也可使用pip install MySQL-python，这里如果安装失败，可直接下载安装包进行安装：[https://pypi.org/project/MySQL-python/\#files。](https://pypi.org/project/MySQL-python/#files。)
 
 ## 三、SQLAlchemy使用
 
@@ -352,7 +353,8 @@ class Article(Base):
     author = relationship('User', backref=backref('article', uselist=False))
 ```
 
-**一对多关系简单示例：**
+**一对多关系简单示例  
+：**
 
 ```py
 # 一对多关系示例1
