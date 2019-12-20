@@ -57,6 +57,7 @@
   * [数据库迁移](python-xue-xi-bi-ji/flask/shu-ju-ku-qian-yi.md)
   * [hook钩子函数](python-xue-xi-bi-ji/flask/hookgou-zi-han-shu.md)
   * [视图函数](python-xue-xi-bi-ji/flask/shi-tu-han-shu.md)
+  * [url\_for](python-xue-xi-bi-ji/flask/urlfor.md)
 * [PyCharm使用](python-xue-xi-bi-ji/pycharmshi-yong.md)
 * [PEP8常用编程规范](python-xue-xi-bi-ji/pep8chang-yong-bian-cheng-gui-fan.md)
 
