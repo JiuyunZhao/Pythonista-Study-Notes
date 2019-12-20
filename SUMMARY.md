@@ -59,6 +59,8 @@
   * [视图函数返回值](python-xue-xi-bi-ji/flask/shi-tu-han-shu.md)
   * [url\_for](python-xue-xi-bi-ji/flask/urlfor.md)
   * [视图函数和类视图](python-xue-xi-bi-ji/flask/shi-tu-han-shu-he-lei-shi-tu.md)
+  * [蓝图Blueprint](python-xue-xi-bi-ji/flask/lan-tu-blueprint.md)
+  * [文件上传](python-xue-xi-bi-ji/flask/wen-jian-shang-chuan.md)
 * [PyCharm使用](python-xue-xi-bi-ji/pycharmshi-yong.md)
 * [PEP8常用编程规范](python-xue-xi-bi-ji/pep8chang-yong-bian-cheng-gui-fan.md)
 
