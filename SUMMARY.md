@@ -40,5 +40,6 @@
   * [PyInstaller（exe程序打包）](python-xue-xi-bi-ji/chang-yong-san-fang-ku/pyinstallerexecheng-xu-da-bao-ff09.md)
 * [设计模式](python-xue-xi-bi-ji/she-ji-mo-shi/README.md)
   * [单例模式](python-xue-xi-bi-ji/she-ji-mo-shi/dan-li-mo-shi.md)
+* [PyCharm使用](python-xue-xi-bi-ji/pycharmshi-yong.md)
 * [PEP8常用编程规范](python-xue-xi-bi-ji/pep8chang-yong-bian-cheng-gui-fan.md)
 
