@@ -6,11 +6,11 @@ tornado.web.UIModule子类为自定义的UI模板，在HTML中使用{% module mo
 
 UIModule类中常用的方法，可以重写这些方法以满足自己对HTML格式的要求：
 
-* **embedded\_css\(\)：**函数中返回的CSS规则被包裹在&lt;style&gt;中，并被直接添加到&lt;head&gt;的闭标签之前；
-* **css\_files\(\)：**返回外部CSS文件路径的字符串；
-* **embedded\_javascript\(\)：**函数中返回的js代码字符串将被&lt;script&gt;包围，并被插入到&lt;body&gt;的闭标签中；
-* **javascript\_files\(\)：**返回外部js文件路径的字符串；
-* **html\_body\(\)：**函数中返回的包含HTML标签的字符串在闭合的&lt;/body&gt;标签前添加进去。
+    * **embedded\_css\(\)：**函数中返回的CSS规则被包裹在&lt;style&gt;中，并被直接添加到&lt;head&gt;的闭标签之前；
+    * **css\_files\(\)：**返回外部CSS文件路径的字符串；
+    * **embedded\_javascript\(\)：**函数中返回的js代码字符串将被&lt;script&gt;包围，并被插入到&lt;body&gt;的闭标签中；
+    * **javascript\_files\(\)：**返回外部js文件路径的字符串；
+    * **html\_body\(\)：**函数中返回的包含HTML标签的字符串在闭合的&lt;/body&gt;标签前添加进去。
 
 ```py
 # 自定模板，可将其设置的HTML内容嵌入到其他HTML模板中
