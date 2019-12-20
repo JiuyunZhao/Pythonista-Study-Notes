@@ -42,6 +42,7 @@
   * [单例模式](python-xue-xi-bi-ji/she-ji-mo-shi/dan-li-mo-shi.md)
   * [工厂模式](python-xue-xi-bi-ji/she-ji-mo-shi/gong-chang-mo-shi.md)
   * [facade模式](python-xue-xi-bi-ji/she-ji-mo-shi/facademo-shi.md)
+  * [代理模式](python-xue-xi-bi-ji/she-ji-mo-shi/dai-li-mo-shi.md)
 * [Tornado](python-xue-xi-bi-ji/tornado.md)
   * [Hello World](python-xue-xi-bi-ji/tornado/helloworld.md)
   * [Application](python-xue-xi-bi-ji/tornado/application.md)
