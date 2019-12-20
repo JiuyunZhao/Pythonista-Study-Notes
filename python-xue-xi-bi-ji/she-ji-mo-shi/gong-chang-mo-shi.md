@@ -11,11 +11,11 @@
 * 对于对象的修改只需要在工厂里面进行即可，包括添加新的对象，客户端只需要更改少量的代码，甚至可以不修改代码就可以达到要求。
 * 使用工厂接口，还可以重用已有的对象，不用去别处调用已有的对象或者重新创建一个对象。
 
-#### **工厂模式的3种实现形式（或者说3中变体）：**
+#### 工厂模式的3种实现形式（或者说3中变体）：
 
-* 简单工厂模式：工厂类会提供一个接口，并根据客户端传入参数来创建相应的实例对象。（创建一个对象）
+* **简单工厂模式：**工厂类会提供一个接口，并根据客户端传入参数来创建相应的实例对象。（创建一个对象）
 * 工厂方法模式：需要定义一个基类，不同的子类则代表着不同类型的对象。相对于简单工厂模式而言，工厂方法模式具有更强的可定制性。（创建一个对象）
-* 抽象工厂模式：需要定义一个抽象工厂类，然后由不同的子类来创建不同系列的对象，一个系列即代表一组对象。（创建一组对象）
+* **抽象工厂模式：**需要定义一个抽象工厂类，然后由不同的子类来创建不同系列的对象，一个系列即代表一组对象。（创建一组对象）
 
 #### **简单工厂模式示例：**
 
@@ -58,8 +58,6 @@ Tulip price: $66
 ```
 
 **特点：**接口根据客户端传入的参数即可返回对应的实例对象，甚至不用返回它的对象就可以进行对应的操作（比如示例中的工厂FlowerSimpleFactory中可以直接定义一个print\_price方法来打印各种花的价格，而不是先返回对象，再由对象调用show\_price方法来打印），即不会暴露对象的创建逻辑，客户端直接使用接口即可完成对象的创建，甚至创建对象之后的一些操作。
-
-
 
 #### 工厂方法模式示例：
 
@@ -137,8 +135,6 @@ Lily price: $33
 
 **特点：**工厂方法可以根据基类来定义不同的子类，如示例中的FlowerShop1和FlowerShop2，每个子类则代表“工厂”可以创建的一个“产品”。即对象的创建是通过继承的子类来完成的。
 
-
-
 #### 抽象工厂模式示例：
 
 ```py
@@ -172,7 +168,7 @@ class DomesticSedanCar(SedanCar):
 class EnglishMiniCar(MiniCar):
     def show_size(self):
         print('English mini car size: 222')
-        
+
 
 class EnglishSedanCar(SedanCar):
     def show_price(self):
@@ -194,7 +190,7 @@ class CarFactory(metaclass=ABCMeta):
 class DomesticCarFactory(CarFactory):
     def create_mini_car(self):
         return DomesticMiniCar()
-    
+
     def create_sedan_car(self):
         return DomesticSedanCar()
 
@@ -203,7 +199,7 @@ class DomesticCarFactory(CarFactory):
 class EnglishCarFactory(CarFactory):
     def create_mini_car(self):
         return EnglishMiniCar()
-    
+
     def create_sedan_car(self):
         return EnglishSedanCar()
 ```
