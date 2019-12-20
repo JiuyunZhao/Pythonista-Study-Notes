@@ -40,7 +40,7 @@ Python的三方库xlrd用于对excel文件进行读取，可以是“.xls”或�
 
 ## xlwt模块
 
-Python的三方库xlwt用于新建一个excel文件，可以是“.xls”或“.xlsx”格式（旧版本可能不支持“.xlsx”）。
+Python的三方库xlwt用于新建一个“.xls”格式excel文件。注意只能是“.xls”格式的excel，保存为“.xlsx”时（我用office是不能打开的，但是用WPS可以打开），将其后缀名保存为“.zip”后发现，它是不能打开的，但是“.xlsx”格式的文件本身就是基于xml的压缩文件，改了后缀名后是可以打开的，所以xlwt确实是不能保存为“.xlsx”文件的（这个在API文档中也有说明）。
 
 **下载安装：**[https://pypi.org/project/xlwt/\#files](https://pypi.org/project/xlwt/#files) 或者使用pip安装“pip install xlwt”
 
