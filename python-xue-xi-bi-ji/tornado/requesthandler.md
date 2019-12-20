@@ -5,9 +5,9 @@
 RequestHandler类中常用的方法，在子类中可根据需要进行重写：
 
 * **get\(\)和post\(\)：**在RequestHandler子类中可以重写get和post方法，当有数据提交到本路由的页面后，就可以根据提交的方式get或post执行对应的get或post方法，并返回方法中render函数传入的模板页面；
-* **render\(template\_name,\*\*kwargs\)：**render方法有两个参数，第一个为模板名称，即需要跳转到的目标页面，第二个参数为需要传递进模板页面的参数字典，在模板中可以使用控制语句“{% %}”和表达语句“{{ }}”使用这些参数；
+* **render\(template\_name,\*\*kwargs\)：**render方法有两个参数，第一个为模板名称，即需要跳转到的目标页面，第二个参数为需要传递进模板页面的参数字典，在模板中可以使用控制语句`{% %}`和表达语句`{{ }}`使用这些参数；
 * **render\_string\(template\_name,\*\*kwargs\)：**将一个HTML模板内容以字符串的形式传递，后面的参数为传入HTML的参数；
-* **write\(chunk\)：**一般是直接将字符串中的HTML代码写入浏览器客户端，chunk只能是bytes/unicode\_type/dict中的一种，这个方法以chunk“块”写入HTTP的响应；
+* **write\(chunk\)：**一般是直接将字符串中的HTML代码写入浏览器客户端，chunk只能是`bytes/unicode_type/dict`中的一种，这个方法以chunk“块”写入HTTP的响应；
 * **get\_argument\(argument\_name, default=object\(\)\)：**获取从客户端传入的参数值，但只能获取单个参数的值，没有获取到就返回默认的值；
 * **get\_arguments\(argument\_names\)：**获取从客户端传入的某类参数值，即多个值；
 * **request.files\['filename'\]：**获取从客户端传入的文件；
