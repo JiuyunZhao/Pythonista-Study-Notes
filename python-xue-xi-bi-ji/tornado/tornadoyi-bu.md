@@ -8,16 +8,16 @@
 
 Tornado的异步处理主要在以下几点（可以保持当前客户端连接不关闭，不必等当前请求处理完成后再处理下一个请求）：
 
-1. **异步装饰器@tornado.web.asynchronous：**在web方法比如get上使用异步装饰器表明这是一个异步处理方法，被这个装饰器装饰的方法永远不会自己关闭客户端连接（Tornado默认在处理函数返回时自动关闭连接），必须使用finish方法手动关闭。
-2. **异步HTTP客户端处理类tornado.httpclient.AsyncHTTPClient：**
+1. 异步装饰器@tornado.web.asynchronous：在web方法比如get上使用异步装饰器表明这是一个异步处理方法，被这个装饰器装饰的方法永远不会自己关闭客户端连接（Tornado默认在处理函数返回时自动关闭连接），必须使用finish方法手动关闭。
+2. 异步HTTP客户端处理类tornado.httpclient.AsyncHTTPClient：
 
-* AsyncHTTPClient的实例可以执行异步的HTTP请求；
-* AsyncHTTPClient的fetch方法不会返回url的调用结果（HTTPResponse），而是使用了一个callback参数来指定HTTPResponse的处理方法，将HTTPResponse作为这个指定方法的参数传入进去进行相关的处理；
+* AsyncHTTPClient的实例可以执行异步的HTTP请求。
+* AsyncHTTPClient的fetch方法不会返回url的调用结果（HTTPResponse），而是使用了一个callback参数来指定HTTPResponse的处理方法，将HTTPResponse作为这个指定方法的参数传入进去进行相关的处理。
 * 在fetch方法的callback参数指定的处理方法的结尾处可以调用tornado.web.RequestHandler的finish方法来关闭客户端链接。
 
-1. **异步处理模块tornado.gen：**
+1. 异步处理模块tornado.gen：
 
-* 装饰器@tornado.gen.engine：告诉tornado被装饰的方法将使用tornado.gen.Task类；
+* 装饰器@tornado.gen.engine：告诉tornado被装饰的方法将使用tornado.gen.Task类。
 * 使用yield生成tornado.gen.Task类的实例，将我们想要的调用（比如：fetch方法）和需要传入该调用函数的参数传入这个Task实例：相比于第2点的fetch方法的callback回调功能将处理方法分成两个部分，这个异步生成器的好处在于，一是该请求的处理会在yield处停止执行，直到这个回调函数返回，但这并不会影响其他请求的处理，它依然是异步的，二是回调函数中可能还有回调函数，这样循环下去不容易维护，但是这个异步生成器可以让所有处理都在一个方法里，易开发和维护。
 
 **同步示例：**
@@ -62,7 +62,7 @@ if __name__ == '__main__':
 
 **异步示例：**
 
-与同步的代码相比，不同之处在于三点：①@tornado.web.asynchronous，②tornado.httpclient.AsyncHTTPClient\(\)，③fetch的callback参数（需要在回调函数中使用self.finish\(\)，不然浏览器不会将处理结果加载出来，因为它不知道你已经处理完了）。同样运行代码发现访问如http://localhost:8000/?word=tornado时，如果开了两个窗口，这两个窗口都只需等待10s就可加载出来，第二个窗口无需等待第一个窗口加载完成。
+与同步的代码相比，不同之处在于三点：①@tornado.web.asynchronous，②tornado.httpclient.AsyncHTTPClient\(\)，③fetch的callback参数（需要在回调函数中使用self.finish\(\)，不然浏览器不会将处理结果加载出来，因为它不知道你已经处理完了）。同样运行代码发现访问如[http://localhost:8000/?word=tornado时，如果开了两个窗口，这两个窗口都只需等待10s就可加载出来，第二个窗口无需等待第一个窗口加载完成。](http://localhost:8000/?word=tornado时，如果开了两个窗口，这两个窗口都只需等待10s就可加载出来，第二个窗口无需等待第一个窗口加载完成。)
 
 ```py
 #!/usr/bin/env python
