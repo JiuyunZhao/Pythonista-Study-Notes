@@ -65,6 +65,7 @@
   * [session](python-xue-xi-bi-ji/flask/session.md)
   * [上下文](python-xue-xi-bi-ji/flask/shang-xia-wen.md)
   * [信号机制](python-xue-xi-bi-ji/flask/xin-hao-ji-zhi.md)
+  * [RESTful](python-xue-xi-bi-ji/flask/restful.md)
 * [PyCharm使用](python-xue-xi-bi-ji/pycharmshi-yong.md)
 * [PEP8常用编程规范](python-xue-xi-bi-ji/pep8chang-yong-bian-cheng-gui-fan.md)
 
