@@ -53,6 +53,7 @@
   * [Hello World](python-xue-xi-bi-ji/flask/hello-world.md)
   * [配置文件](python-xue-xi-bi-ji/flask/pei-zhi-wen-jian.md)
   * [URL（传参，请求，重定向）](python-xue-xi-bi-ji/flask/urlff08-chuan-can-ff0c-qing-qiu-ff0c-zhong-ding-xiang-ff09.md)
+  * [数据库ORM操作](python-xue-xi-bi-ji/flask/shu-ju-ku-orm-cao-zuo.md)
 * [PyCharm使用](python-xue-xi-bi-ji/pycharmshi-yong.md)
 * [PEP8常用编程规范](python-xue-xi-bi-ji/pep8chang-yong-bian-cheng-gui-fan.md)
 
