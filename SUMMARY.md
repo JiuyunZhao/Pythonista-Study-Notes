@@ -73,6 +73,8 @@
   * [上下文](python-xue-xi-bi-ji/flask/shang-xia-wen.md)
   * [信号机制](python-xue-xi-bi-ji/flask/xin-hao-ji-zhi.md)
   * [RESTful](python-xue-xi-bi-ji/flask/restful.md)
+* [python3-cookbook](python-xue-xi-bi-ji/python3-cookbook.md)
+  * [第一章 数据结构和算法](python-xue-xi-bi-ji/python3-cookbook/di-yi-zhang-shu-ju-jie-gou-he-suan-fa.md)
 * [PyCharm使用](python-xue-xi-bi-ji/pycharmshi-yong.md)
 * [PEP8常用编程规范](python-xue-xi-bi-ji/pep8chang-yong-bian-cheng-gui-fan.md)
 
