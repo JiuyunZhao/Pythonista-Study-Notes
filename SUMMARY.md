@@ -78,6 +78,7 @@
   * [第二章 字符串和文本](python-xue-xi-bi-ji/python3-cookbook/di-er-zhang-zi-fu-chuan-he-wen-ben.md)
   * [第三章 数字日期和时间](python-xue-xi-bi-ji/python3-cookbook/di-san-zhang-shu-zi-ri-qi-he-shi-jian.md)
   * [第四章 迭代器与生成器](python-xue-xi-bi-ji/python3-cookbook/di-si-zhang-die-dai-qi-yu-sheng-cheng-qi.md)
+  * [第五章 文件与IO](python-xue-xi-bi-ji/python3-cookbook/di-wu-zhang-wen-jian-yu-io.md)
 * [PyCharm使用](python-xue-xi-bi-ji/pycharmshi-yong.md)
 * [PEP8常用编程规范](python-xue-xi-bi-ji/pep8chang-yong-bian-cheng-gui-fan.md)
 
