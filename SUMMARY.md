@@ -80,6 +80,7 @@
   * [第四章 迭代器与生成器](python-xue-xi-bi-ji/python3-cookbook/di-si-zhang-die-dai-qi-yu-sheng-cheng-qi.md)
   * [第五章 文件与IO](python-xue-xi-bi-ji/python3-cookbook/di-wu-zhang-wen-jian-yu-io.md)
   * [第六章 数据编码和处理](python-xue-xi-bi-ji/python3-cookbook/di-liu-zhang-shu-ju-bian-ma-he-chu-li.md)
+  * [第七章 函数](python-xue-xi-bi-ji/python3-cookbook/di-qi-zhang-han-shu.md)
 * [PyCharm使用](python-xue-xi-bi-ji/pycharmshi-yong.md)
 * [PEP8常用编程规范](python-xue-xi-bi-ji/pep8chang-yong-bian-cheng-gui-fan.md)
 
