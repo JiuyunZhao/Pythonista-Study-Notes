@@ -84,6 +84,7 @@
   * [第八章 类与对象](python-xue-xi-bi-ji/python3-cookbook/di-ba-zhang-lei-yu-dui-xiang.md)
   * [第九章 元编程](python-xue-xi-bi-ji/python3-cookbook/di-jiu-zhang-yuan-bian-cheng.md)
   * [第十章 模块与包](python-xue-xi-bi-ji/python3-cookbook/di-shi-zhang-mo-kuai-yu-bao.md)
+  * [第十二章 并发编程](python-xue-xi-bi-ji/python3-cookbook/di-shi-er-zhang-bing-fa-bian-cheng.md)
 * [PyCharm使用](python-xue-xi-bi-ji/pycharmshi-yong.md)
 * [PEP8常用编程规范](python-xue-xi-bi-ji/pep8chang-yong-bian-cheng-gui-fan.md)
 
