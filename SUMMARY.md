@@ -1,8 +1,12 @@
 # Summary
 
-* [概述](README.md)
+## Linux笔记
 
-## Python学习笔记
+* [概述](README.md)
+* [基础知识](ji-chu-zhi-shi.md)
+  * [Linux和Windows](ji-chu-zhi-shi/linuxhe-windows.md)
+
+## Python笔记
 
 * [概述](python-xue-xi-bi-ji/readme.md)
 * [基础知识](python-xue-xi-bi-ji/chapter1/README.md)
