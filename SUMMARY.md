@@ -5,6 +5,7 @@
 * [概述](README.md)
 * [基础知识](ji-chu-zhi-shi.md)
   * [Linux与Windows](ji-chu-zhi-shi/linuxhe-windows.md)
+  * [远程连接工具FinalShell](ji-chu-zhi-shi/yuan-cheng-lian-jie-gong-ju-finalshell.md)
 
 ## Python笔记
 
