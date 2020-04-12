@@ -7,6 +7,7 @@
   * [Linux与Windows](ji-chu-zhi-shi/linuxhe-windows.md)
   * [远程连接工具FinalShell](ji-chu-zhi-shi/yuan-cheng-lian-jie-gong-ju-finalshell.md)
   * [系统目录结构](ji-chu-zhi-shi/xi-tong-mu-lu-jie-gou.md)
+  * [查看命令或配置文件的帮助信息](ji-chu-zhi-shi/cha-kan-ming-ling-huo-pei-zhi-wen-jian-de-bang-zhu-xin-xi.md)
 
 ## Python笔记
 

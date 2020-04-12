@@ -3,6 +3,7 @@
 * Linux与Windows
 * 远程连接工具FinalShell
 * 系统目录结构
+* 查看命令或配置文件的帮助信息
 
 
 
