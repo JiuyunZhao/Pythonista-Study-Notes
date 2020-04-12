@@ -4,7 +4,7 @@
 
 * [概述](README.md)
 * [基础知识](ji-chu-zhi-shi.md)
-  * [Linux和Windows](ji-chu-zhi-shi/linuxhe-windows.md)
+  * [Linux与Windows](ji-chu-zhi-shi/linuxhe-windows.md)
 
 ## Python笔记
 
