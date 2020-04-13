@@ -1,14 +1,5 @@
 # Summary
 
-## Linux笔记
-
-* [概述](README.md)
-* [基础知识](ji-chu-zhi-shi.md)
-  * [Linux与Windows](ji-chu-zhi-shi/linuxhe-windows.md)
-  * [远程连接工具FinalShell](ji-chu-zhi-shi/yuan-cheng-lian-jie-gong-ju-finalshell.md)
-  * [系统目录结构](ji-chu-zhi-shi/xi-tong-mu-lu-jie-gou.md)
-  * [查看命令或配置文件的帮助信息](ji-chu-zhi-shi/cha-kan-ming-ling-huo-pei-zhi-wen-jian-de-bang-zhu-xin-xi.md)
-
 ## Python笔记
 
 * [概述](python-xue-xi-bi-ji/readme.md)
@@ -95,4 +86,14 @@
   * [第十三章 脚本编程与系统管理](python-xue-xi-bi-ji/python3-cookbook/di-shi-san-zhang-jiao-ben-bian-cheng-yu-xi-tong-guan-li.md)
 * [PyCharm使用](python-xue-xi-bi-ji/pycharmshi-yong.md)
 * [PEP8常用编程规范](python-xue-xi-bi-ji/pep8chang-yong-bian-cheng-gui-fan.md)
+
+## Linux笔记
+
+* [概述](README.md)
+* [基础知识](ji-chu-zhi-shi.md)
+  * [Linux与Windows](ji-chu-zhi-shi/linuxhe-windows.md)
+  * [远程连接工具FinalShell](ji-chu-zhi-shi/yuan-cheng-lian-jie-gong-ju-finalshell.md)
+  * [系统目录结构](ji-chu-zhi-shi/xi-tong-mu-lu-jie-gou.md)
+  * [查看命令或配置文件的帮助信息](ji-chu-zhi-shi/cha-kan-ming-ling-huo-pei-zhi-wen-jian-de-bang-zhu-xin-xi.md)
+  * [文件和目录常用操作](ji-chu-zhi-shi/wen-jian-he-mu-lu-chang-yong-cao-zuo.md)
 
