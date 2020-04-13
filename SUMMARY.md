@@ -97,4 +97,5 @@
   * [查看命令或配置文件的帮助信息](ji-chu-zhi-shi/cha-kan-ming-ling-huo-pei-zhi-wen-jian-de-bang-zhu-xin-xi.md)
   * [文件和目录常用操作](ji-chu-zhi-shi/wen-jian-he-mu-lu-chang-yong-cao-zuo.md)
   * [查看和搜索文件内容](ji-chu-zhi-shi/cha-kan-he-sou-suo-wen-jian-nei-rong.md)
+  * [Vim使用](ji-chu-zhi-shi/vimshi-yong.md)
 
