@@ -98,4 +98,5 @@
   * [文件和目录常用操作](ji-chu-zhi-shi/wen-jian-he-mu-lu-chang-yong-cao-zuo.md)
   * [查看和搜索文件内容](ji-chu-zhi-shi/cha-kan-he-sou-suo-wen-jian-nei-rong.md)
   * [Vim使用](ji-chu-zhi-shi/vimshi-yong.md)
+  * [文件压缩解压](ji-chu-zhi-shi/wen-jian-ya-suo-jie-ya.md)
 
