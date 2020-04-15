@@ -100,4 +100,5 @@
   * [Vim使用](ji-chu-zhi-shi/vimshi-yong.md)
   * [文件压缩解压](ji-chu-zhi-shi/wen-jian-ya-suo-jie-ya.md)
   * [网络常用命令](ji-chu-zhi-shi/wang-luo-chang-yong-ming-ling.md)
+  * [关机重启登出](ji-chu-zhi-shi/guan-ji-zhong-qi-deng-chu.md)
 
