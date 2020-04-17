@@ -102,4 +102,5 @@
   * [网络常用命令](ji-chu-zhi-shi/wang-luo-chang-yong-ming-ling.md)
   * [关机重启登出](ji-chu-zhi-shi/guan-ji-zhong-qi-deng-chu.md)
   * [磁盘分区和挂载](ji-chu-zhi-shi/ci-pan-fen-qu-he-gua-zai.md)
+  * [用户和用户组](ji-chu-zhi-shi/yong-hu-he-yong-hu-zu.md)
 
