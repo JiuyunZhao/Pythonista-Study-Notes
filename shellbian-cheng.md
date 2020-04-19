@@ -3,6 +3,7 @@
 * hello world和Shell基础
 * 变量
 * 正则表达式
+* 字符串提取
 
 
 
