@@ -108,4 +108,5 @@
   * [其他系统操作](ji-chu-zhi-shi/qi-ta-xi-tong-cao-zuo.md)
 * [Shell编程](shellbian-cheng.md)
   * [hello world和Shell基础](shellbian-cheng/hello-world.md)
+  * [变量](shellbian-cheng/bian-liang.md)
 
