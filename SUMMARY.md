@@ -90,7 +90,7 @@
 ## Linux笔记
 
 * [概述](README.md)
-* [基础知识](ji-chu-zhi-shi.md)
+* [Linux基础知识](ji-chu-zhi-shi.md)
   * [Linux与Windows](ji-chu-zhi-shi/linuxhe-windows.md)
   * [远程连接工具FinalShell](ji-chu-zhi-shi/yuan-cheng-lian-jie-gong-ju-finalshell.md)
   * [系统目录结构](ji-chu-zhi-shi/xi-tong-mu-lu-jie-gou.md)
@@ -106,4 +106,6 @@
   * [权限管理](ji-chu-zhi-shi/quan-xian-guan-li.md)
   * [进程管理](ji-chu-zhi-shi/jin-cheng-guan-li.md)
   * [其他系统操作](ji-chu-zhi-shi/qi-ta-xi-tong-cao-zuo.md)
+* [Shell编程](shellbian-cheng.md)
+  * [hello world和Shell基础](shellbian-cheng/hello-world.md)
 
