@@ -109,4 +109,5 @@
 * [Shell编程](shellbian-cheng.md)
   * [hello world和Shell基础](shellbian-cheng/hello-world.md)
   * [变量](shellbian-cheng/bian-liang.md)
+  * [正则表达式](shellbian-cheng/zheng-ze-biao-da-shi.md)
 
