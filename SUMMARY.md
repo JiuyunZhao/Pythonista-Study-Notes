@@ -111,4 +111,5 @@
   * [变量](shellbian-cheng/bian-liang.md)
   * [正则表达式](shellbian-cheng/zheng-ze-biao-da-shi.md)
   * [字符串提取](shellbian-cheng/zi-fu-chuan-jie-qu.md)
+  * [测试选项](shellbian-cheng/ce-shi-xuan-xiang.md)
 
