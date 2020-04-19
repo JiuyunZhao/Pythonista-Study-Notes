@@ -105,4 +105,5 @@
   * [用户和用户组](ji-chu-zhi-shi/yong-hu-he-yong-hu-zu.md)
   * [权限管理](ji-chu-zhi-shi/quan-xian-guan-li.md)
   * [进程管理](ji-chu-zhi-shi/jin-cheng-guan-li.md)
+  * [其他系统操作](ji-chu-zhi-shi/qi-ta-xi-tong-cao-zuo.md)
 
