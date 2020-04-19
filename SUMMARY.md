@@ -112,4 +112,5 @@
   * [正则表达式](shellbian-cheng/zheng-ze-biao-da-shi.md)
   * [字符串提取](shellbian-cheng/zi-fu-chuan-jie-qu.md)
   * [测试选项](shellbian-cheng/ce-shi-xuan-xiang.md)
+  * [if和case条件判断](shellbian-cheng/ifcasetiao-jian-pan-duan.md)
 
