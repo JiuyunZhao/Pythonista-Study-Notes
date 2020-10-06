@@ -1,12 +1,10 @@
-# threading（多线程操作）
+# threading（多线程）
 
 Python的线程操作在旧版本中使用的是thread模块，在Python27和Python3中引入了threading模块，同时thread模块在Python3中改名为\_thread模块，threading模块相较于thread模块，对于线程的操作更加的丰富，而且threading模块本身也是相当于对thread模块的进一步封装而成，thread模块有的功能threading模块也都有，所以涉及到对线程的操作，推荐使用threading模块。
 
 threading模块中包含了关于线程操作的丰富功能，包括：常用线程函数，线程对象，锁对象，递归锁对象，事件对象，条件变量对象，信号量对象，定时器对象，栅栏对象。
 
 **注：**本文使用的Python版本是Python3.6
-
-
 
 #### 一、with语法
 
@@ -31,8 +29,6 @@ finally:
     some_lock.release()
 ```
 
-
-
 #### 二、threading函数
 
 在Python3中方法名和函数名统一成了以字母小写加下划线的命令方式，但是Python2.x中threading模块的某些以驼峰命名的方法和函数仍然可用，如threading.active\_count\(\)和threading.activeCount\(\)是一样的。
@@ -46,13 +42,9 @@ finally:
 * **threading.main\_thread\(\)：**返回主线程对象，通常情况下，就是程序启动时Python解释器创建的threading.\_MainThread线程对象。
 * **threading.stack\_size\(\[size\]\)：**返回创建线程时使用的堆栈大小。也可以使用可选参数size指定之后创建线程时的堆栈大小，size可以是0或者一个不小于32KiB的正整数。如果参数没有指定，则默认为0。如果系统或者其他原因不支持改变堆栈大小，则会报RuntimeError错误；如果指定的堆栈大小不合法，则会报ValueError，但并不会修改这个堆栈的大小。32KiB是保证能解释器运行的最小堆栈大小，当然这个值会因为系统或者其他原因有限制，比如它要求的值是大于32KiB的某个值，只需根据要求修改即可。
 
-
-
 #### 三、threading常量
 
 **threading.TIMEOUT\_MAX：**指定阻塞函数（如Lock.acquire\(\)、RLock.acquire\(\)、Condition.wait\(\)等）中参数timeout的最大值，在给这些阻塞函数传参时如果超过了这个指定的最大值会抛出OverflowError错误。
-
-
 
 #### 四、线程对象：threading.Thread
 
@@ -216,8 +208,6 @@ hi
 Main thread has ended!
 ```
 
-
-
 #### 五、锁对象：threading.Lock
 
 threading.Lock是直接通过\_thread模块扩展实现的。
@@ -278,8 +268,6 @@ if __name__ == '__main__':
 修改全局变量为： ['hi', 'hi', 'hi', 'hi', 'hi']
 修改全局变量为： ['hello', 'hello', 'hello', 'hello', 'hello']
 ```
-
-
 
 #### 六、递归锁对象：threading.RLock
 
@@ -350,8 +338,6 @@ if __name__ == '__main__':
 线程test_thread_hello获得了锁rlock_hi
 ```
 
-
-
 #### 七、条件变量对象：threading.Condition
 
 它的wait\(\)方法释放锁，并阻塞程序直到其他线程调用notify\(\)或者notify\_all\(\)方法唤醒，然后wait\(\)方法重新获取锁，这个方法也可以指定timeout超时时间。
@@ -414,7 +400,7 @@ def test_thread_hello():
 
     print('通知线程test_thread_hi可以准备获取锁了')
     condition_lock.notify()
-    
+
     # 先notify/notify_all之后在释放锁
     condition_lock.release()
     print('你获取锁吧')
@@ -438,8 +424,6 @@ if __name__ == '__main__':
 你获取锁吧
 继续执行
 ```
-
-
 
 #### 八、信号量对象：threading.Semaphore
 
@@ -482,8 +466,6 @@ def main():
 if __name__ == '__main__':
     main()
 ```
-
-
 
 #### 九、事件对象：threading.Event
 
@@ -542,8 +524,6 @@ def main():
 开始考试了！
 ```
 
-
-
 #### 十、定时器对象：threading.Timer
 
 表示一个操作需要在等待一定时间之后执行，相当于一个定时器。Timer类是threading.Thread的子类，所以它可以像一个自定义线程一样工作。
@@ -558,8 +538,6 @@ def main():
 * **kwargs：**传入function的关键字参数，如果为None，则会传入一个空字典。
 
 **cancel\(\)：**停止计时器，并取消对应函数的执行，这个方法只有在计时器还没有计时结束之前才会生效，如果已经开始执行函数，则不会生效。
-
-
 
 #### 十一、栅栏对象：threading.Barrier
 
@@ -633,8 +611,6 @@ barrier thread-3 end!
 barrier thread-4 end!
 ```
 
-
-
 #### 十二、多线程与多进程的理解
 
 在网上查多线程资料的时候，很多文章讲到了对Python的多线程与多进程的理解，包括相同之处和它们之间的区别，我就整理了一些点放在这里：
@@ -654,6 +630,4 @@ barrier thread-4 end!
 **死锁：**指的是两个或两个以上的线程或进程在请求锁的时候形成了互相等待阻塞的情况，导致这些线程或进程无法继续执行下去，这时候称系统处于死锁状态或者系统产生了死锁，这些线程或进程就称为死锁线程或死锁进程。解决死锁的办法可以使用递归锁，即threading.RLock，然后线程或进程就可以随意请求和释放锁了，而不用担心别的线程或进程也在请求锁而产生死锁的情况。
 
 **信号量与进程池：**进程池Pool\(n\)只能是“池”中的n个进程运行，不能有新的进程，信号量只要保证最大线程数就行，而不是只有这几个线程，旧的线程运行结束，就可以继续来新的线程。
-
-
 
