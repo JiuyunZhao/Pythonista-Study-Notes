@@ -18,6 +18,7 @@
   * [面向对象（类）](basic-knowledge/class.md)
   * [异常处理](basic-knowledge/try-except.md)
   * [open函数和with临时运行环境](basic-knowledge/open-with.md)
+  * [高阶函数](basic-knowledge/gao-jie-han-shu.md)
 * [常用内置库](built-in-library/README.md)
   * [os模块](built-in-library/os.md)
   * [sys模块](built-in-library/sys.md)
